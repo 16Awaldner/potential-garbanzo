@@ -3,243 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Leveling - IRL Quests</title>
-    <meta name="description" content="Privacy Policy for Leveling - IRL Quests mobile application">
-    <link rel="stylesheet" href="styles.css">
+    <title>Privacy Policies</title>
+    <meta name="description" content="Privacy policies for our mobile applications">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0b1020;
+            --card: #121a2b;
+            --text: #e8edf7;
+            --muted: #a8b3c7;
+            --border: #24304a;
+            --accent-blue: #7dd3fc;
+            --accent-amber: #f59e0b;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg, #0b1020 0%, #111827 100%);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 720px;
+            width: 100%;
+            padding: 48px 20px;
+        }
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            text-align: center;
+            color: var(--muted);
+            margin-bottom: 40px;
+            font-size: 1rem;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .card {
+            background: rgba(18, 26, 43, 0.96);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 28px 24px;
+            text-decoration: none;
+            color: var(--text);
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0,0,0,.35);
+        }
+        .card--leveling:hover { border-color: var(--accent-blue); }
+        .card--chaos:hover { border-color: var(--accent-amber); }
+        .card .pill {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            width: fit-content;
+        }
+        .card--leveling .pill {
+            background: rgba(125, 211, 252, .1);
+            color: var(--accent-blue);
+            border: 1px solid rgba(125, 211, 252, .25);
+        }
+        .card--chaos .pill {
+            background: rgba(245, 158, 11, .12);
+            color: var(--accent-amber);
+            border: 1px solid rgba(245, 158, 11, .28);
+        }
+        .card h2 {
+            font-size: 1.25rem;
+            line-height: 1.3;
+        }
+        .card p {
+            color: var(--muted);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        .arrow {
+            margin-top: auto;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .card--leveling .arrow { color: var(--accent-blue); }
+        .card--chaos .arrow { color: var(--accent-amber); }
+        footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+            margin-top: 48px;
+        }
+        @media (max-width: 540px) {
+            .cards { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <div class="logo">
-                <img src="appicon.png" alt="Leveling - IRL Quests" class="app-icon">
-                <h1>Leveling - IRL Quests</h1>
-            </div>
-            <p class="subtitle">Privacy Policy & Legal Information</p>
-        </header>
+        <h1>Privacy Policies</h1>
+        <p class="subtitle">Select an app to view its privacy policy and legal information.</p>
 
-        <main class="main-content">
-            <section class="disclaimer-section">
-                <h2>⚠️ Important Disclaimer</h2>
-                <div class="disclaimer-box">
-                     
-                    <p><strong>ENTERTAINMENT PURPOSES ONLY:</strong> This application is designed solely for entertainment purposes. The developer takes no responsibility for any actions, decisions, or consequences resulting from the use of this application.</p>
-                    
-                    <p><strong>NO DATA COLLECTION:</strong> This application does not collect, store, or transmit any personal data. All data remains internal to your device and is not shared with any external parties.</p>
-                    
-                    <p><strong>USE AT YOUR OWN RISK:</strong> By using this application, you acknowledge and agree that you are using it at your own risk and discretion.</p>
-                </div>
-            </section>
+        <div class="cards">
+            <a href="leveling-privacy-policy.html" class="card card--leveling">
+                <span class="pill">Leveling - IRL Quests</span>
+                <h2>Leveling - IRL Quests</h2>
+                <p>Privacy policy, disclaimers, and terms for the Leveling app.</p>
+                <span class="arrow">View policy &rarr;</span>
+            </a>
 
-            <section class="privacy-policy">
-                <h2>Privacy Policy</h2>
-                <p class="last-updated">Last updated: <span id="current-date"></span></p>
-
-                <div class="policy-section">
-                    <h3>1. Information We Collect</h3>
-                    <p><strong>We collect NO personal information.</strong> This application operates entirely offline and does not:</p>
-                    <ul>
-                        <li>Collect personal data</li>
-                        <li>Store information on external servers</li>
-                        <li>Track user behavior</li>
-                        <li>Share data with third parties</li>
-                        <li>Use analytics or tracking services</li>
-                    </ul>
-                </div>
-
-                <div class="policy-section">
-                    <h3>2. Data Storage</h3>
-                    <p>All application data, including:</p>
-                    <ul>
-                        <li>User progress and achievements</li>
-                        <li>Quest completion status</li>
-                        <li>Settings and preferences</li>
-                        <li>Any other app-generated content</li>
-                    </ul>
-                    <p>is stored locally on your device only. This data is not transmitted, backed up to external servers, or accessible by the developer or any third parties.</p>
-                </div>
-
-                <div class="policy-section">
-                    <h3>3. Third-Party Services</h3>
-                    <p>This application does not integrate with any third-party services that would collect or process personal data. The app operates independently without external data connections.</p>
-                </div>
-
-                <div class="policy-section">
-                    <h3>4. Children's Privacy</h3>
-                    <p>This application is suitable for all ages and does not collect any personal information from users of any age. No special considerations are needed for children's privacy as no data collection occurs.</p>
-                </div>
-
-                <div class="policy-section">
-                    <h3>5. Data Security</h3>
-                    <p>Since no data is collected or transmitted, there are no data security concerns. All information remains secure on your personal device under your control.</p>
-                </div>
-
-                <div class="policy-section">
-                    <h3>6. Changes to This Policy</h3>
-                    <p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date. We encourage you to review this policy periodically.</p>
-                </div>
-
-                <div class="policy-section">
-                    <h3>7. Contact Information</h3>
-                    <p>If you have any questions about this privacy policy or need support, please contact us at:</p>
-                    <p><strong>Email:</strong> <a href="mailto:ooohtugboat@gmail.com">ooohtugboat@gmail.com</a></p>
-                    <p>You can also visit our <a href="support.html">Support Page</a> for additional help and frequently asked questions.</p>
-                </div>
-            </section>
-
-            <section class="legal-disclaimers">
-                <h2>Legal Disclaimers</h2>
-                
-                <div class="disclaimer-item">
-                    <h3>Entertainment Only</h3>
-                    <p>This application is provided for entertainment purposes only. It is not intended to provide professional advice, guidance, or recommendations of any kind.</p>
-                </div>
-
-                <div class="disclaimer-item">
-                    <h3>No Warranties</h3>
-                    <p>This application is provided "as is" without any warranties, express or implied. The developer disclaims all warranties, including but not limited to merchantability, fitness for a particular purpose, and non-infringement.</p>
-                </div>
-
-                <div class="disclaimer-item">
-                    <h3>Limitation of Liability</h3>
-                    <p>In no event shall the developer be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising out of or relating to the use of this application.</p>
-                </div>
-
-                <div class="disclaimer-item">
-                    <h3>User Responsibility</h3>
-                    <p>Users are solely responsible for their actions and decisions while using this application. The developer assumes no responsibility for any consequences resulting from the use of this app.</p>
-                </div>
-
-                <div class="disclaimer-item">
-                    <h3>No Professional Advice</h3>
-                    <p>Nothing in this application constitutes professional advice of any kind. Users should consult appropriate professionals for any decisions that may have legal, financial, or other significant consequences.</p>
-                </div>
-            </section>
-
-            <section class="terms-of-use">
-                <h2>Terms of Use</h2>
-                
-                <div class="terms-section">
-                    <h3>Acceptance of Terms</h3>
-                    <p>By downloading, installing, or using this application, you agree to be bound by these terms of use and our privacy policy.</p>
-                </div>
-
-                <div class="terms-section">
-                    <h3>Permitted Use</h3>
-                    <p>You may use this application for personal, non-commercial entertainment purposes only. You may not:</p>
-                    <ul>
-                        <li>Reverse engineer or attempt to extract source code</li>
-                        <li>Distribute or resell the application</li>
-                        <li>Use the application for any illegal or unauthorized purpose</li>
-                        <li>Modify or create derivative works</li>
-                    </ul>
-                </div>
-
-                <div class="terms-section">
-                    <h3>Intellectual Property</h3>
-                    <p>All content, features, and functionality of this application are owned by the developer and are protected by copyright, trademark, and other intellectual property laws.</p>
-                </div>
-
-                <div class="terms-section">
-                    <h3>Termination</h3>
-                    <p>We reserve the right to terminate or suspend your access to the application at any time, without notice, for any reason.</p>
-                </div>
-            </section>
-            <div class="wrap">
-            </ul>
-      
-            <h2>3. Information Collected by Third Parties</h2>
-            <p>
-              While we do not collect personal data ourselves, the app uses third-party advertising services that may collect information automatically.
-            </p>
-            <p>
-              We use advertising services provided by <strong>Google AdMob</strong>. These services may collect:
-            </p>
-            <ul>
-              <li>Device information</li>
-              <li>IP address</li>
-              <li>Advertising identifiers</li>
-              <li>Usage data</li>
-            </ul>
-            <p>This information may be used to:</p>
-            <ul>
-              <li>Display ads</li>
-              <li>Improve ad performance</li>
-              <li>Provide personalized or non-personalized ads</li>
-            </ul>
-            <p>
-              For more information, see Google’s Privacy Policy:
-              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>
-            </p>
-      
-            <h2>4. Tracking Technologies</h2>
-            <p>Third-party services such as AdMob may use tracking technologies including:</p>
-            <ul>
-              <li>Cookies</li>
-              <li>Mobile advertising IDs</li>
-              <li>Device identifiers</li>
-            </ul>
-            <p>
-              On iOS devices, users may be asked for permission through Apple’s App Tracking Transparency framework.
-            </p>
-      
-            <h2>5. How Information Is Used</h2>
-            <p>We do not use personal data directly. Third-party services may use automatically collected information to:</p>
-            <ul>
-              <li>Serve advertisements</li>
-              <li>Analyze app performance</li>
-              <li>Improve their services</li>
-            </ul>
-      
-            <h2>6. Children’s Privacy</h2>
-            <p>
-              Chaos Cards is <strong>not intended for children under the age of 13</strong>. We do not knowingly collect personal information from children. If you believe a child has provided personal data through a third-party service connected with the app, please contact us and we will review the issue.
-            </p>
-      
-            <h2>7. Your Privacy Rights</h2>
-            <p><strong>California Residents (CCPA/CPRA):</strong> If you are a California resident, you may have the right to know what personal information is collected, request deletion, and opt out of the sale or sharing of personal information, subject to applicable law.</p>
-            <p><strong>European Users (GDPR):</strong> If you are located in the EEA, you may have rights including access, correction, deletion, and restriction of processing, subject to applicable law.</p>
-            <p>
-              Because Chaos Cards does not directly collect or store personal information, these rights generally apply to third-party services used within the app.
-            </p>
-      
-            <h2>8. Data Security</h2>
-            <p>
-              We do not store user data on our servers. Gameplay data remains on your device.
-            </p>
-      
-            <h2>9. Changes to This Privacy Policy</h2>
-            <p>
-              We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated Effective Date.
-            </p>
-      
-            <h2>10. Contact Us</h2>
-            <p>
-              If you have any questions about this Privacy Policy, contact us at:<br />
-              <strong>Email:</strong> <a href="mailto:waldnerclaw@gmail.com">waldnerclaw@gmail.com</a>
-            </p>
-      
-            
-          </div>
+            <a href="chaos-cards-privacy-policy.html" class="card card--chaos">
+                <span class="pill">Chaos Cards</span>
+                <h2>Chaos Cards</h2>
+                <p>Privacy policy and legal information for Chaos Cards.</p>
+                <span class="arrow">View policy &rarr;</span>
+            </a>
         </div>
-        </main>
 
-        <footer class="footer">
-            <p>&copy; <span id="current-year"></span> Leveling - IRL Quests. All rights reserved.</p>
-            <p class="footer-note">This application is for entertainment purposes only. No data is collected or stored externally.</p>
-            <nav class="footer-nav">
-                <a href="index.html">Privacy Policy</a> | 
-                <a href="support.html">Support</a>
-            </nav>
+        <footer>
+            <p>&copy; <span id="year"></span> All rights reserved.</p>
         </footer>
     </div>
 
     <script>
-        // Set current date and year
-        document.getElementById('current-date').textContent = new Date().toLocaleDateString();
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
