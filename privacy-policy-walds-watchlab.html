@@ -24,33 +24,58 @@
 <body>
 <main>
   <h1>Wald’s WatchLab Privacy Policy</h1>
-  <p class="muted">Effective October 6, 2026</p>
+  <p class="muted">Effective November 16, 2026</p>
 
-  <p><strong>Short version:</strong> Wald’s WatchLab (“WatchLab”) does not collect, store, or share any of your data. It has no accounts, no servers of its own, no analytics, and no advertising.</p>
+  <p><strong>Short version:</strong> Wald’s WatchLab (“WatchLab”) does not collect or share your data with the developer. It has no accounts, no servers of its own, no analytics, and no advertising. Your settings stay on your device, and the app talks to the servers you add, plus public artwork servers for posters.</p>
 
   <h2>What the app does</h2>
-  <p>WatchLab is a client for services you run yourself, such as media managers, download clients, media servers, and monitoring tools. It connects directly from your device to the server addresses you enter, and to nothing else.</p>
+  <p>WatchLab is a client for services you run yourself, such as media managers, download clients, media servers, and monitoring tools. It connects directly from your device to the server addresses you enter.</p>
 
   <h2>Information stored on your device</h2>
   <ul>
-    <li><strong>Service settings</strong> (names, addresses, and which sign-in method each one uses) are stored in the app's private storage on your device.</li>
-    <li><strong>Passwords, API keys, and tokens</strong> are stored in the iOS Keychain on your device. They never sync to iCloud and are never sent anywhere except to the server they belong to.</li>
-    <li><strong>Uptime history and alert state</strong> are kept on your device so the app can show charts and avoid repeating notifications.</li>
-    <li><strong>Preferences</strong> (theme, alert switches, App Lock) are stored on your device.</li>
+    <li><strong>Service settings</strong> (names, addresses, web UI links, sign-in method, any custom request headers you add, network notes, and whether to allow an untrusted certificate) are stored in the app’s private storage on your device.</li>
+    <li><strong>Passwords, API keys, and tokens</strong> are stored in the iOS Keychain on this device only. They never sync to iCloud and are never sent anywhere except to the server they belong to. <strong>Custom header values</strong> are stored with the service settings rather than in the Keychain, so avoid putting secrets in custom headers if you can use a sign-in method instead.</li>
+    <li><strong>Uptime history</strong> (14 days of hourly checks and the 50 most recent incidents) is kept so the app can show charts.</li>
+    <li><strong>Alert state</strong> (failure streaks, recently finished download names for up to 30 days, and pending requests) is kept so the app does not repeat notifications.</li>
+    <li><strong>Preferences</strong> (theme, alert switches, Live Activity, link handling, and App Lock) are stored on your device.</li>
+    <li><strong>Poster images</strong> may be cached on your device to load faster.</li>
   </ul>
-  <p>None of this is transmitted to the developer or to any third party. Deleting a service, using “Reset App Data”, or deleting the app removes it.</p>
+  <p>None of this is sent to the developer. Like other app data, it may be included in your iCloud or computer backups, according to your Apple settings.</p>
+
+  <h2>Information about other people</h2>
+  <p>Your servers may contain information about other people, such as who requested a title or who is streaming. WatchLab shows this information from your server, and may include requester names in notifications. It does not send this information anywhere else.</p>
 
   <h2>Data collection</h2>
   <p>The developer collects no data. WatchLab contains no analytics, crash-reporting, advertising, or tracking code, and does not use any third-party SDKs.</p>
 
-  <h2>Notifications and background activity</h2>
-  <p>If you turn on alerts, WatchLab periodically checks <em>your own servers</em> in the background and shows notifications generated on your device. No push-notification service is involved.</p>
+  <h2>Network connections</h2>
+  <ul>
+    <li><strong>Your servers:</strong> WatchLab connects to the server addresses you configure. Some self-hosted services use plain HTTP on private networks, and the app uses http:// if you do not enter a scheme. When a server supports HTTPS, use an https:// address so the connection is encrypted.</li>
+    <li><strong>Untrusted certificates:</strong> if you turn on “Allow Untrusted Certificate” for a service, WatchLab will accept any certificate from it, which makes the connection easier to intercept. Use it only on networks you trust.</li>
+    <li><strong>Poster artwork:</strong> to show posters, WatchLab loads images directly from public artwork servers, such as The Movie Database (TMDB) and TheTVDB, using links supplied by your services. Those servers receive your IP address and which image was requested, under their own privacy policies. No account or personal information is sent to them.</li>
+    <li><strong>Web pages:</strong> if you open a service’s web interface, it loads in Safari or an in-app Safari view.</li>
+  </ul>
+
+  <h2>Notifications, Live Activities, and background activity</h2>
+  <p>If you turn on alerts, or while a Live Activity is running, WatchLab periodically checks <em>your own servers</em> in the background. Notifications and Live Activities are created on your device; no push-notification service is involved.</p>
+  <p>Notifications can include service names, download titles, requester names, and disk names. Live Activities show the current download’s name and progress on the Lock Screen and in the Dynamic Island. These may be visible to anyone who can see your screen, even when App Lock is on. You can control them in iOS Settings.</p>
+
+  <h2>Siri and Shortcuts</h2>
+  <p>WatchLab makes your service names available to Siri, Shortcuts, and Spotlight so you can use them in commands. Siri can read service and download names aloud. This is handled by iOS on your device.</p>
 
   <h2>Face ID</h2>
   <p>If you turn on App Lock, iOS verifies your identity with Face ID, Touch ID, or your passcode. WatchLab only receives a yes/no result; it never has access to biometric data.</p>
 
-  <h2>Network connections</h2>
-  <p>WatchLab connects only to the server addresses you configure. Some self-hosted services use plain HTTP on private networks. When a server supports HTTPS, use an https:// address so the connection is encrypted.</p>
+  <h2>Sharing</h2>
+  <p>WatchLab shares nothing on its own. If you choose to share a diagnostics report or container logs, or copy a link, that content goes only where you send it. Diagnostics reports include your server’s address.</p>
+
+  <h2>Deleting your data</h2>
+  <ul>
+    <li><strong>Delete a service</strong> to remove its settings, Keychain credentials, and uptime history.</li>
+    <li><strong>Reset App Data</strong> in Settings removes all services, credentials, history, alert state, and preferences.</li>
+    <li><strong>Deleting the app</strong> removes its data from the device. iOS may keep Keychain items after an app is deleted; use Reset App Data first if you want credentials removed.</li>
+  </ul>
+  <p>Notifications you have already received and cached poster images are cleared by iOS separately.</p>
 
   <h2>Children</h2>
   <p>WatchLab is not directed at children and collects no personal information from anyone.</p>

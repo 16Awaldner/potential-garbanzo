@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Party Confessional Privacy Policy</title>
-<meta name="description" content="Privacy policy for the Party Confessional app for iPhone and iPad. Everything stays on your device.">
+<title>Unscripted Privacy Policy</title>
+<meta name="description" content="Unscripted collects no data. What the app stores on your device, how the roaming camera connects your own devices, and how to delete everything.">
 <style>
   :root {
     --stage: #0B0B0C;
@@ -145,110 +145,132 @@
   }
   footer { max-width: 820px; margin: 0 auto 40px; padding: 0 16px; color: #8C887F; font-size: 13px; }
 </style>
+<style>
+  /* Shared with the support page */
+  .topnav { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 14px; font-size: 15px; }
+  .topnav a { color: #fff; }
+  .path { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 15px; white-space: nowrap; }
+</style>
 </head>
 <body>
 <header>
   <div class="viewfinder">
-    <h1>Party <span class="accent">Confessional</span></h1>
+    <h1>Un<span class="accent">scripted</span></h1>
   </div>
-  <p class="meta mono"><span>PRIVACY POLICY</span> · <span>EFFECTIVE OCTOBER 5, 2026</span></p>
+  <p class="meta mono"><span>PRIVACY POLICY</span> · <span>EFFECTIVE NOVEMBER 16, 2026</span></p>
+  <nav class="topnav" aria-label="Page sections">
+    <a href="#summary">Summary</a>
+    <a href="#device">On your device</a>
+    <a href="#permissions">Permissions</a>
+    <a href="#roaming">Roaming camera</a>
+    <a href="#deleting">Deleting</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <main>
   <article class="card">
-    <p class="summary">Party Confessional keeps everything on your device. We have no servers, no accounts, no ads and no analytics, so we never receive your recordings or any other information about you or your guests.</p>
-
-    <p class="muted">This policy explains what the Party Confessional app for iPhone and iPad (“the app”) stores, where it keeps it, and the choices you have. “Host” means the person who owns the device and runs an event. “Guest” means anyone who records in the app’s Booth Mode.</p>
-
-    <section>
-      <h2><span class="num mono">01</span><span class="label">What we collect</span></h2>
-      <p><strong>Nothing.</strong> The app makes no network connections. It does not send recordings, names, usage statistics, crash reports, device identifiers or any other data to us or to anyone else. It contains no advertising, analytics or tracking code, and it does not track you across other apps or websites.</p>
+    <section id="summary">
+      <h2><span class="num mono">01</span><span class="label">The short version</span></h2>
+      <p class="summary">Unscripted (formerly Party Confessional) collects no data. There are no servers, accounts, analytics, ads or tracking, and no third-party code. What you and your guests record stays on your devices. It leaves them only when you share it, or when you choose to connect a roaming camera to your booth.</p>
+      <p>The developer never receives, sees or stores your recordings or anything else from the app. The app never connects to the internet.</p>
     </section>
 
-    <section>
-      <h2><span class="num mono">02</span><span class="label">What stays on your device</span></h2>
-      <p>To work, the app saves the following on the device it runs on, and only there:</p>
-      <table>
-        <thead><tr><th>Information</th><th>Why it’s stored</th></tr></thead>
-        <tbody>
-          <tr><td>Videos, photos and audio recorded in the app</td><td>The footage guests capture for your event.</td></tr>
-          <tr><td>First names guests choose to type in</td><td>Labels a recording with who’s talking. Guests can skip this or stay anonymous, and the host can turn the question off.</td></tr>
-          <tr><td>Event details, prompts, notes, tags, storylines and the episode outline</td><td>Lets the host organize footage.</td></tr>
-          <tr><td>Recording metadata (time, length, question asked, event stage, whether the guest agreed to the recording notice)</td><td>Keeps clips in order, makes them searchable, and shows the host who agreed to be recorded.</td></tr>
-          <tr><td>Edited episode videos you render</td><td>The finished video of your event, built on the device from your own clips.</td></tr>
-          <tr><td>Host PIN</td><td>Locks Booth Mode. Stored only as a salted, one-way hash in the iOS Keychain, never as the PIN itself.</td></tr>
-          <tr><td>App preferences</td><td>Remembers whether Booth Mode is on and which question comes next.</td></tr>
-        </tbody>
-      </table>
-      <p>Recordings are kept in the app’s own storage. They also appear in the Files app (On My iPhone or On My iPad › Party Confessional) and in Finder when the device is connected to a Mac, so you can always reach your original files.</p>
-      <p>If you back up your device with iCloud Backup or to a computer, Apple’s backup may include the app’s data, under your own backup settings. We never have access to those backups.</p>
-    </section>
-
-    <section>
-      <h2><span class="num mono">03</span><span class="label">Permissions</span></h2>
-      <p>iOS asks for your permission before the app can use any of the following. You can change these at any time in Settings › Party Confessional.</p>
+    <section id="device">
+      <h2><span class="num mono">02</span><span class="label">What the app keeps on your device</span></h2>
+      <p>To work, the app saves these on the device it runs on, inside its own storage:</p>
       <ul>
-        <li><strong>Camera:</strong> records confessionals, party videos and photos.</li>
-        <li><strong>Microphone:</strong> records sound with videos. Without it, videos are silent.</li>
-        <li><strong>Photos (add only):</strong> requested only when you choose Save to Photos. The app can add items to your library but cannot see or read it.</li>
-        <li><strong>Face ID, Touch ID or device passcode:</strong> optionally unlocks Booth Mode. Apple handles this check; the app only learns whether it succeeded and never receives any biometric data.</li>
+        <li><strong>Events:</strong> names, dates, types, themes, settings and the questions you use.</li>
+        <li><strong>Recordings:</strong> the videos (with sound) and photos recorded at the booth, sent by a roaming camera or imported from Photos.</li>
+        <li><strong>Details about each recording:</strong> the time, the question asked, the name and caption a guest typed (if any), whether they agreed to the on-camera notice, a transcript if you made one, and your own notes, tags and edits.</li>
+        <li><strong>Secret missions:</strong> the guest’s name, the dare they were given, and whether they came back to confess.</li>
+        <li><strong>Episodes:</strong> the most recent episode you rendered, which can include guests’ names, subtitles and music.</li>
+        <li><strong>Music:</strong> a copy of any song you pick for the episode.</li>
+        <li><strong>Your host PIN:</strong> stored in the iOS Keychain, salted and hashed, never in plain text.</li>
+        <li><strong>Small app settings:</strong> such as whether you’ve seen the welcome guide and where the question rotation is up to. On a roaming camera, this includes the name you typed and the event name and code of the booth you last joined.</li>
+      </ul>
+      <p>None of this is sent to the developer or to any server. Your files can be reached in Finder when the device is connected to a Mac. Like any app data, it may be included in your device’s own iCloud or computer backups if you have those turned on; those are governed by Apple’s privacy policy.</p>
+    </section>
+
+    <section id="permissions">
+      <h2><span class="num mono">03</span><span class="label">Permissions and why</span></h2>
+      <p>You can change these at any time in <span class="path">Settings › Unscripted</span>.</p>
+      <ul>
+        <li><strong>Camera and microphone:</strong> to record when someone taps record at the booth or on a roaming camera. Nothing is recorded otherwise.</li>
+        <li><strong>Photos (add only):</strong> to save the clips or episode you choose to your Photos library. The app can’t read your library with this permission.</li>
+        <li><strong>Photo picker:</strong> to import videos and photos. It’s Apple’s picker: the app only receives the items you select and never has access to the rest of your library. Imported items may keep their original details, such as where they were taken, and those details may go with them if you share them later.</li>
+        <li><strong>Speech Recognition:</strong> only if you turn on subtitles or tap Transcribe. Apple’s speech recognizer turns what’s said in a clip into text, on the device. Unscripted requires on-device recognition, so audio is never sent to Apple or anyone else; if your device can’t transcribe offline, the app says so instead.</li>
+        <li><strong>Files:</strong> only when you pick a song for your episode. A copy is stored with the event, and the app sees only the file you choose.</li>
+        <li><strong>Face ID, Touch ID or passcode:</strong> to unlock the booth. Apple handles this; the app only learns whether it succeeded and never receives biometric data.</li>
+        <li><strong>Local Network:</strong> only for the optional roaming camera, below.</li>
       </ul>
     </section>
 
-    <section>
-      <h2><span class="num mono">04</span><span class="label">Sharing</span></h2>
-      <p>The app never shares anything on its own. Footage leaves the device only when the host chooses to, for example with the iOS Share Sheet (AirDrop, Messages, Mail, Files or another app), Save to Photos, or by copying files in the Files app or Finder. Once you share something, the service or person you send it to handles it under their own terms and privacy policies.</p>
+    <section id="roaming">
+      <h2><span class="num mono">04</span><span class="label">Roaming camera</span></h2>
+      <p>The roaming camera lets a second iPhone send the videos and photos it takes to your booth. It uses Apple’s MultipeerConnectivity to connect the two devices directly, over Wi-Fi or Bluetooth. The connection is encrypted and never uses the internet or any server.</p>
+      <ul>
+        <li>The booth only accepts a phone that enters the event’s 6-digit code, and only while the event’s dashboard or booth is open. Making a new code disconnects every phone.</li>
+        <li>Once a phone has joined, each clip it records is sent to the booth automatically, with the time it was taken and the name the person filming typed in. The phone reconnects on its own to a booth it has joined before.</li>
+        <li>The booth sends back only the event’s name and whether each clip was saved.</li>
+        <li>The phone keeps each clip until the booth confirms it, then deletes its copy.</li>
+        <li>While the booth is accepting cameras, nearby devices may be able to see the event’s name, and a joining phone shows up nearby as “[name]’s camera”. Nobody can join or see anything else without the code.</li>
+      </ul>
+    </section>
+
+    <section id="sharing">
+      <h2><span class="num mono">05</span><span class="label">When recordings leave your device</span></h2>
+      <p>Apart from the roaming camera, only when you choose to: through the share sheet (AirDrop, Messages, Mail, Files and so on), by saving to Photos, or by copying the files to a computer. Shared files are named with the guest’s name. Exporting a whole event folder also includes a list of each clip’s details, such as guest names, questions, notes, tags and whether the guest agreed to be recorded. Once shared, the recipient app or person’s own privacy terms apply.</p>
       <p>Booth Mode is designed so guests cannot view, delete or export anyone’s recordings.</p>
     </section>
 
-    <section>
-      <h2><span class="num mono">05</span><span class="label">For hosts: your guests</span></h2>
-      <p>By default, Booth Mode shows each guest a short notice before anything records, explaining that the recording is saved on the device for the host to watch, edit and share. Recording starts only after the guest taps “I’m in”, and the app notes on each clip whether the guest agreed. The host can turn this notice off in Event Settings.</p>
-      <p>The host decides how the app is used at an event and is responsible for the recordings made with it. Please let guests know they are being recorded, get any consent required where you live, and respect requests to delete a recording. Hosts can delete any clip or an entire event at any time from within the app.</p>
-      <p>If you were recorded at an event and want a recording removed, please contact the host who ran the event. We cannot access, find or delete recordings, because they exist only on the host’s device.</p>
+    <section id="guests">
+      <h2><span class="num mono">06</span><span class="label">For hosts: your guests</span></h2>
+      <p>By default, before recording at the booth, each guest sees a notice that their recording is saved for the host to watch, edit and share, and recording starts only if they agree. The app notes on each clip whether the guest agreed. The host can turn this notice off in Event Settings. Clips from a roaming camera and items imported from Photos don’t show this notice and are marked as not agreed.</p>
+      <p>The host decides how the app is used and is responsible for the recordings made with it. Please let people know they are being recorded, especially by a roaming camera, get any consent required where you live, and respect requests to delete a recording.</p>
+      <p>If you were recorded and want a clip removed, ask the host: they can delete any clip in the app. The developer has no copy and no way to access it.</p>
     </section>
 
-    <section>
-      <h2><span class="num mono">06</span><span class="label">Children</span></h2>
-      <p>The app is not directed at children under 13, and we do not knowingly collect personal information from anyone, because we collect none at all. Hosts are responsible for getting a parent’s or guardian’s permission before recording children.</p>
+    <section id="children">
+      <h2><span class="num mono">07</span><span class="label">Children</span></h2>
+      <p>Unscripted isn’t directed at children under 13, and the developer doesn’t knowingly collect personal information from anyone, because it collects none at all. Hosts are responsible for getting a parent or guardian’s permission before filming children at their events.</p>
     </section>
 
-    <section>
-      <h2><span class="num mono">07</span><span class="label">Keeping and deleting data</span></h2>
-      <p>Everything stays on the device until you delete it.</p>
+    <section id="deleting">
+      <h2><span class="num mono">08</span><span class="label">Deleting your data</span></h2>
       <ul>
-        <li><strong>Delete a recording:</strong> open it in the Media Library and choose Delete.</li>
-        <li><strong>Delete an event:</strong> Event Settings › Delete Event removes the event and all of its recordings.</li>
-        <li><strong>Delete everything:</strong> deleting the app removes all of its data from the device. Copies you already shared or saved to Photos, and any device backups, are not affected.</li>
+        <li>Delete a clip from its screen in the Media Library. This also clears that event’s exported copies and rendered episode in the app.</li>
+        <li>Delete a whole event, with all its media, secret missions and music, in <span class="path">Event Settings › Delete Event</span>.</li>
+        <li>On a roaming camera, clips that haven’t reached a booth stay on the phone until they send; deleting the app removes them.</li>
+        <li>Deleting the app removes everything it stored on that device. Copies you already shared or saved to Photos, and device backups, aren’t affected.</li>
       </ul>
       <p class="muted">iOS may keep the Keychain entry holding the hashed host PIN after the app is deleted. It contains no personal information.</p>
     </section>
 
-    <section>
-      <h2><span class="num mono">08</span><span class="label">Security</span></h2>
-      <p>Your data is protected by the security built into iOS, including encryption of app data when the device has a passcode set. Because nothing is sent over the internet, there is no server for anyone to breach. Keep your device protected with a passcode, and use Guided Access when the booth is unattended.</p>
+    <section id="security">
+      <h2><span class="num mono">09</span><span class="label">Security</span></h2>
+      <p>Your data is protected by the security built into iOS, including encryption of app data when the device has a passcode set. Roaming camera connections are encrypted and require the event code. Because nothing is sent over the internet, there is no server for anyone to breach. Keep your device protected with a passcode, and use Guided Access when the booth is unattended.</p>
     </section>
 
-    <section>
-      <h2><span class="num mono">09</span><span class="label">Your rights</span></h2>
-      <p>Depending on where you live, laws such as the GDPR or the CCPA may give you rights to access, correct or delete personal information a company holds about you. We hold no personal information about you, so there is nothing for us to provide or delete. You stay in full control of your data on your device. If you have a question about your rights, please contact us.</p>
+    <section id="rights">
+      <h2><span class="num mono">10</span><span class="label">Your rights</span></h2>
+      <p>Depending on where you live, laws such as the GDPR or the CCPA may give you rights to access, correct or delete personal information a company holds about you. The developer holds no personal information about you, so there is nothing to provide or delete. If you have a question about your rights, please contact us.</p>
     </section>
 
-    <section>
-      <h2><span class="num mono">10</span><span class="label">Changes</span></h2>
-      <p>If we change how the app handles information, we will update this page and its effective date. If a change ever involves collecting data, we will explain it here before it takes effect.</p>
+    <section id="changes">
+      <h2><span class="num mono">11</span><span class="label">Changes</span></h2>
+      <p>If the app ever starts handling data differently, this page will be updated before that version is released, with a new effective date at the top.</p>
     </section>
 
-    <section>
-      <h2><span class="num mono">11</span><span class="label">Contact</span></h2>
-      <p>Questions about this policy or the app’s privacy?</p>
-      <p class="contact">Email <a href="mailto:waldnerclaw@gmail.com">waldnerclaw@gmail.com</a></p>
+    <section id="contact">
+      <h2><span class="num mono">12</span><span class="label">Contact</span></h2>
+      <p class="contact">Questions about privacy? Email <a href="mailto:waldnerclaw@gmail.com?subject=Unscripted%20privacy">waldnerclaw@gmail.com</a></p>
     </section>
   </article>
 </main>
 
 <footer>
-  <p class="mono">© 2026 Party Confessional. Last updated October 5, 2026.</p>
+  <p class="mono">© 2026 Unscripted. Last updated November 16, 2026.</p>
 </footer>
 </body>
 </html>
