@@ -24,19 +24,20 @@
 <body>
 <main>
   <h1>Wald’s WatchLab Privacy Policy</h1>
-  <p class="muted">Effective November 16, 2026</p>
+  <p class="muted">Effective November 18, 2026 · Updated for version 1.1</p>
 
-  <p><strong>Short version:</strong> Wald’s WatchLab (“WatchLab”) does not collect or share your data with the developer. It has no accounts, no servers of its own, no analytics, and no advertising. Your settings stay on your device, and the app talks to the servers you add, plus public artwork servers for posters.</p>
+  <p><strong>Short version:</strong> Wald’s WatchLab (“WatchLab”) does not collect or share your data with the developer. It has no accounts, no servers of its own, no analytics, and no advertising. Your settings stay on your device, and the app talks to the servers you add, plus public artwork servers for posters and any custom app link you choose to download.</p>
 
   <h2>What the app does</h2>
-  <p>WatchLab is a client for services you run yourself, such as media managers, download clients, media servers, and monitoring tools. It connects directly from your device to the server addresses you enter.</p>
+  <p>WatchLab is a client for services you run yourself, such as media managers, download clients, media servers, notification and monitoring tools, and AI assistants you host yourself. It connects directly from your device to the server addresses you enter.</p>
 
   <h2>Information stored on your device</h2>
   <ul>
     <li><strong>Service settings</strong> (names, addresses, web UI links, sign-in method, any custom request headers you add, network notes, and whether to allow an untrusted certificate) are stored in the app’s private storage on your device.</li>
     <li><strong>Passwords, API keys, and tokens</strong> are stored in the iOS Keychain on this device only. They never sync to iCloud and are never sent anywhere except to the server they belong to. <strong>Custom header values</strong> are stored with the service settings rather than in the Keychain, so avoid putting secrets in custom headers if you can use a sign-in method instead.</li>
+    <li><strong>Custom app definitions</strong> you import (small files that describe an app’s health check, numbers, lists, links, and buttons) are stored with the service settings.</li>
     <li><strong>Uptime history</strong> (14 days of hourly checks and the 50 most recent incidents) is kept so the app can show charts.</li>
-    <li><strong>Alert state</strong> (failure streaks, recently finished download names for up to 30 days, and pending requests) is kept so the app does not repeat notifications.</li>
+    <li><strong>Alert state</strong> (failure streaks, recently finished download names for up to 30 days, pending requests, and which ntfy messages and Grafana alerts you have already been notified about) is kept so the app does not repeat notifications.</li>
     <li><strong>Preferences</strong> (theme, alert switches, Live Activity, link handling, and App Lock) are stored on your device.</li>
     <li><strong>Poster images</strong> may be cached on your device to load faster.</li>
   </ul>
@@ -54,12 +55,20 @@
     <li><strong>Cloud services you add:</strong> a few supported services, such as Cloudflare, are run by a provider rather than by you. If you add one, WatchLab sends your requests and credentials for it directly to that provider, which handles them under its own privacy policy.</li>
     <li><strong>Untrusted certificates:</strong> if you turn on “Allow Untrusted Certificate” for a service, WatchLab will accept any certificate from it, which makes the connection easier to intercept. Use it only on networks you trust.</li>
     <li><strong>Poster artwork:</strong> to show posters, WatchLab loads images directly from public artwork servers, such as The Movie Database (TMDB) and TheTVDB, using links supplied by your services. Those servers receive your IP address and which image was requested, under their own privacy policies. No account or personal information is sent to them.</li>
+    <li><strong>Custom app links:</strong> if you download a custom app definition from a link, WatchLab requests that one file from the address you enter, and only when you tap Download. That website receives your IP address, as with any web request.</li>
     <li><strong>Web pages:</strong> if you open a service’s web interface, it loads in Safari or an in-app Safari view.</li>
   </ul>
 
+  <h2>Custom apps</h2>
+  <p>You can add an app WatchLab doesn’t support yet by importing a definition: from a template built into the app, from your own server, from a link, or from a file or pasted text. A definition is plain data, not code. It can only send requests to the server address you enter for that app, using credentials you enter (stored in the Keychain like any other service). Before you save it, WatchLab lists every request the definition can make. Buttons in a custom app send a request only when you tap them.</p>
+
+  <h2>AI chat (Odysseus)</h2>
+  <p>If you add an Odysseus server you host yourself, WatchLab can show its todos, calendar, memories, and model jobs, and you can chat with it. Your messages, and anything you add with “Add Todo” or “Remember”, go only to your Odysseus server, and your conversations are stored there, not in WatchLab. Which AI model answers, and where that model runs, depends on how you set up Odysseus; if you set Odysseus up to use an outside AI provider or web search, that provider handles your messages under its own privacy policy. WatchLab has no AI service of its own, and the developer never sees your conversations. What WatchLab can see and do is limited by the scopes of the API token you create in Odysseus.</p>
+
   <h2>Notifications, Live Activities, and background activity</h2>
   <p>If you turn on alerts, or while a Live Activity is running, WatchLab periodically checks <em>your own servers</em> in the background. Notifications and Live Activities are created on your device; no push-notification service is involved.</p>
-  <p>Notifications can include service names, download titles, requester names, and disk names. Live Activities show the current download’s name and progress on the Lock Screen and in the Dynamic Island. These may be visible to anyone who can see your screen, even when App Lock is on. You can control them in iOS Settings.</p>
+  <p>If you add ntfy or Grafana and turn on “Messages from ntfy &amp; Grafana”, WatchLab also checks your ntfy topics and Grafana alerts the same way and shows new ones as notifications. These are fetched from your own servers, not pushed to you.</p>
+  <p>Notifications can include service names, download titles, requester names, disk names, and the text of ntfy messages and Grafana alerts. Live Activities show the current download’s name and progress on the Lock Screen and in the Dynamic Island. These may be visible to anyone who can see your screen, even when App Lock is on. You can control them in iOS Settings.</p>
 
   <h2>Siri and Shortcuts</h2>
   <p>WatchLab makes your service names available to Siri, Shortcuts, and Spotlight so you can use them in commands. Siri can read service and download names aloud. This is handled by iOS on your device.</p>
@@ -83,6 +92,7 @@
 
   <h2>Changes</h2>
   <p>If this policy changes, the updated version will be posted at this address with a new effective date.</p>
+  <p>November 18, 2026 (version 1.1): added custom apps, AI chat with your own Odysseus server, and notifications from ntfy and Grafana.</p>
 
   <hr>
   <p class="muted">Questions: <a href="mailto:waldnerclaw@gmail.com">waldnerclaw@gmail.com</a></p>
