@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Heirloom Kitchen Privacy Policy</title>
+  <title>Heirloom Kitchen Support &amp; Privacy Policy</title>
+  <meta name="description" content="Support, help and the privacy policy for Heirloom Kitchen, the family recipe app for iPhone and iPad." />
   <style>
     :root {
       --bg: #0f172a;
@@ -91,6 +92,51 @@
       color: #fed7aa;
     }
 
+    .card + .card {
+      margin-top: 24px;
+    }
+
+    .jump {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .jump a {
+      text-decoration: none;
+      font-size: 0.95rem;
+      color: #fdba74;
+      border: 1px solid rgba(251, 146, 60, 0.28);
+      border-radius: 999px;
+      padding: 8px 14px;
+    }
+
+    .jump a:hover {
+      background: rgba(251, 146, 60, 0.12);
+    }
+
+    h3 {
+      margin: 22px 0 6px;
+      font-size: 1.02rem;
+      color: #fff;
+    }
+
+    .email-button {
+      display: inline-block;
+      margin: 6px 0 4px;
+      padding: 12px 20px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #1c1917;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
     @media (max-width: 540px) {
       .card {
         padding: 22px;
@@ -104,7 +150,56 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="card">
+    <nav class="jump" aria-label="On this page">
+      <a href="#support">Support</a>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="index.html">All apps</a>
+    </nav>
+
+    <div class="card" id="support">
+      <div class="badge">Heirloom Kitchen Support</div>
+      <h1>Help with Heirloom Kitchen</h1>
+      <div class="subtitle">Questions, problems or ideas for the family recipe app on iPhone and iPad.</div>
+
+      <h2>Contact us</h2>
+      <p>Email us and say what happened, which iPhone or iPad you use, and your iOS version:</p>
+      <a class="email-button" href="mailto:waldnerclaw@gmail.com?subject=Heirloom%20Kitchen%20support">waldnerclaw@gmail.com</a>
+      <p class="muted">We usually reply within 1–2 days. Because the App keeps everything on your device, we can’t see your recipes. Please don’t send recordings unless we ask.</p>
+
+      <h2>Common questions</h2>
+
+      <h3>Do I need an account or the internet?</h3>
+      <p>No. There’s no sign-in, and everything works offline. Your recipes, clips and stories are saved only on your device.</p>
+
+      <h3>How do I keep my recipes safe or move them to a new phone?</h3>
+      <p>Open <strong>Settings &amp; backups</strong> and tap <strong>Back up the whole recipe box</strong>. Save the backup somewhere safe, such as Files or a computer. On the new iPhone or iPad, tap <strong>Import a family archive or backup</strong> in the same place and choose it. You can also turn on <strong>Remind me if it’s been a month</strong>.</p>
+
+      <h3>Will I lose my recipes if I delete the App?</h3>
+      <p>Yes. Deleting the App deletes its recipes and recordings, unless you have a backup or a device backup. Back up first.</p>
+
+      <h3>How do I send a recipe to family?</h3>
+      <p>On a recipe, tap <strong>Share</strong> to send a printable recipe, a cooking show movie or a family archive. A family archive (<code>.heirloom</code>) opens in Heirloom Kitchen on their iPhone or iPad, with the clips and stories included. Nothing is ever published online.</p>
+
+      <h3>Hands-free Cook Mode doesn’t hear me</h3>
+      <p>In iOS Settings › Heirloom Kitchen, turn on <strong>Microphone</strong> and <strong>Speech Recognition</strong>. Hands-free needs Apple’s on-device speech recognition for your language, which some older devices and some languages don’t have. Say short commands such as “next step”, “go back” or “read it”.</p>
+
+      <h3>The camera or microphone isn’t working</h3>
+      <p>Check iOS Settings › Heirloom Kitchen and make sure Camera and Microphone are on. Then close any other app that might be using the camera.</p>
+
+      <h3>A recording was interrupted or a clip went missing</h3>
+      <p>Heirloom Kitchen keeps interrupted recordings instead of deleting them. Open <strong>Settings &amp; backups › Recover clips</strong> to add them back to a recipe.</p>
+
+      <h3>My device is running out of space</h3>
+      <p>In <strong>Settings &amp; backups</strong>, <strong>Storage</strong> shows what the App uses. <strong>Clear shared copies</strong> removes PDFs, movies and archives made for sending without touching your recipes. Long video clips take the most space.</p>
+
+      <h3>What are the example recipes?</h3>
+      <p>Two made-up recipes that show how the App works. They’re always marked “Example”, and you can remove them in <strong>Settings &amp; backups › Examples</strong>.</p>
+
+      <h3>Can I suggest a feature?</h3>
+      <p>Please do. Email us. We read every message.</p>
+    </div>
+
+    <div class="card" id="privacy">
       <div class="badge">Heirloom Kitchen Privacy Policy</div>
       <h1>Privacy Policy for Heirloom Kitchen</h1>
       <div class="subtitle"><strong>Effective Date:</strong> November 19, 2026</div>
