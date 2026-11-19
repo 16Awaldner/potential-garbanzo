@@ -20,6 +20,7 @@
             --accent-pink: #ff6b9d;
             --accent-red: #f87171;
             --accent-violet: #a397ff;
+            --accent-orange: #fb923c;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -73,6 +74,7 @@
         .card--bingo:hover { border-color: var(--accent-pink); }
         .card--confessional:hover { border-color: var(--accent-red); }
         .card--watchlab:hover { border-color: var(--accent-violet); }
+        .card--heirloom:hover { border-color: var(--accent-orange); }
         .card .pill {
             display: inline-block;
             padding: 5px 12px;
@@ -106,6 +108,11 @@
             color: var(--accent-violet);
             border: 1px solid rgba(163, 151, 255, .28);
         }
+        .card--heirloom .pill {
+            background: rgba(251, 146, 60, .12);
+            color: var(--accent-orange);
+            border: 1px solid rgba(251, 146, 60, .28);
+        }
         .card h2 {
             font-size: 1.25rem;
             line-height: 1.3;
@@ -125,6 +132,7 @@
         .card--bingo .arrow { color: var(--accent-pink); }
         .card--confessional .arrow { color: var(--accent-red); }
         .card--watchlab .arrow { color: var(--accent-violet); }
+        .card--heirloom .arrow { color: var(--accent-orange); }
         .actions {
             display: flex;
             justify-content: center;
@@ -199,6 +207,13 @@
                 <span class="pill">WatchLab</span>
                 <h2>WatchLab</h2>
                 <p>Privacy policy for WatchLab, the self-hosted server client.</p>
+                <span class="arrow">View policy &rarr;</span>
+            </a>
+
+            <a href="heirloom-kitchen-privacy-policy.html" class="card card--heirloom">
+                <span class="pill">Heirloom Kitchen</span>
+                <h2>Heirloom Kitchen</h2>
+                <p>Privacy policy for Heirloom Kitchen, the family recipe and cooking video keeper.</p>
                 <span class="arrow">View policy &rarr;</span>
             </a>
         </div>
