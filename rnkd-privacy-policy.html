@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RNKD Privacy Policy</title>
+  <title>RNKD Support &amp; Privacy Policy</title>
+  <meta name="description" content="Support, help and the privacy policy for RNKD, the nearby party game for iPhone and iPad." />
   <style>
     :root {
       --bg: #0f172a;
@@ -90,6 +91,51 @@
       padding: 4px 20px 8px;
     }
 
+    .card + .card {
+      margin-top: 28px;
+    }
+
+    .jump {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .jump a {
+      text-decoration: none;
+      font-size: 0.95rem;
+      color: #c4b5fd;
+      border: 1px solid rgba(140, 102, 255, 0.32);
+      border-radius: 999px;
+      padding: 8px 14px;
+    }
+
+    .jump a:hover {
+      background: rgba(140, 102, 255, 0.14);
+    }
+
+    h3 {
+      margin: 22px 0 6px;
+      font-size: 1.02rem;
+      color: #fff;
+    }
+
+    .email-button {
+      display: inline-block;
+      margin: 6px 0 4px;
+      padding: 12px 20px;
+      border-radius: 999px;
+      background: #8c66ff;
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
     @media (max-width: 540px) {
       .card { padding: 22px 18px; }
       h1 { font-size: 1.8rem; }
@@ -98,7 +144,47 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="card">
+    <nav class="jump" aria-label="On this page">
+      <a href="#support">Support</a>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="index.html">All apps</a>
+    </nav>
+
+    <div class="card" id="support">
+      <div class="badge">RNKD Support</div>
+      <h1>Help with RNKD</h1>
+      <div class="subtitle">Questions, problems or ideas for the nearby party game on iPhone and iPad.</div>
+
+      <h2>Contact us</h2>
+      <p>Email us and say what happened, which iPhone or iPad you use, and your iOS version:</p>
+      <a class="email-button" href="mailto:waldnerclaw@gmail.com?subject=RNKD%20support">waldnerclaw@gmail.com</a>
+      <p class="muted">We usually reply within 1–2 days. RNKD keeps your profile and stats on your device, so we can’t see them.</p>
+
+      <h2>Common questions</h2>
+
+      <h3>Why can’t players find my room?</h3>
+      <p>Keep the lobby open, make sure everyone allowed <strong>Local Network</strong> access, and use the same Wi‑Fi or turn on Wi‑Fi and Bluetooth on every device. Some public and guest networks block devices from seeing each other. You can turn Local Network access back on in iOS Settings › RNKD.</p>
+
+      <h3>Do guests need to buy the pack I’m hosting?</h3>
+      <p>No. Only the host needs to own a premium pack. Guests can play it in that room but don’t keep it.</p>
+
+      <h3>How do I get my purchases on a new device?</h3>
+      <p>Sign in with the same Apple Account and tap <strong>Restore Purchases</strong> on the Packs screen.</p>
+
+      <h3>Can I move my player account to another device?</h3>
+      <p>No. Player accounts are stored only on the device where they were created, with no cloud sync. Purchases do move: use Restore Purchases.</p>
+
+      <h3>How do I delete my account?</h3>
+      <p>Open <strong>Settings › Player Account › Delete Account</strong>. Deletion is immediate.</p>
+
+      <h3>A fact in a pack looks wrong</h3>
+      <p>Email us with the pack and the card. Corrections ship in an app update.</p>
+
+      <h3>Can I suggest a mode or a pack?</h3>
+      <p>Please do. Email us. We read every message.</p>
+    </div>
+
+    <div class="card" id="privacy">
       <div class="badge">RNKD Privacy Policy</div>
       <h1>Privacy Policy for RNKD</h1>
       <div class="subtitle"><strong>Effective Date:</strong> November 20, 2026</div>
